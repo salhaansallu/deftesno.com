@@ -1,0 +1,11 @@
+ErrorDocument 404 /404
+
+RewriteEngine on
+
+DirectoryIndex templates/home.php
+
+RewriteRule ^about templates/website/about.php [NC,L]
+RewriteRule ^contact templates/website/contact.php [NC,L]
+RewriteRule ^submit-contact templates/functions/sendMessage.php [NC,L]
+
+Options -Indexes
